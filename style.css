@@ -197,7 +197,7 @@ h1 {
   margin-right: calc(352 * 100% / 1440);
 }
 
-.data-form h2{
+.data-form h2 {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 23px;
   font-weight: 400;
@@ -205,7 +205,7 @@ h1 {
   letter-spacing: 0.2rem;
 }
 
-.data-form h6{
+.data-form h6 {
   font-size: 16px;
   color: #7B7B7B;
   letter-spacing: 0.12rem;
@@ -217,6 +217,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 label {
@@ -238,21 +239,21 @@ input {
   display: flex;
   flex-direction: column;
   color: #565656;
-  width: 215px;
+  width: 30%;
 }
 
 .email {
   display: flex;
   flex-direction: column;
   color: #565656;
-  width: 215px;
+  width: 30%
 }
 
 .website {
   display: flex;
   flex-direction: column;
   color: #565656;
-  width: 215px;
+  width: 30%
 }
 
 .save {
@@ -319,24 +320,24 @@ button {
   margin-left: 12%;
 }
 
-.comment h4, 
-.comment-2 h4{
+.comment h4,
+.comment-2 h4 {
   font-size: 19px;
   font-weight: 600;
   letter-spacing: 0.1rem;
   padding-right: 24px;
 }
 
-.comment h6, 
-.comment-2 h6{
+.comment h6,
+.comment-2 h6 {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.2rem;
   color: #7B7B7B;
 }
 
-.comment p, 
-.comment-2 p{
+.comment p,
+.comment-2 p {
   font-size: 19px;
   font-weight: 400;
   line-height: 32px;
@@ -360,7 +361,7 @@ button {
   align-items: center;
 }
 
-.reply p{
+.reply p {
   margin-left: 6px;
   margin-bottom: 0;
 }
@@ -464,6 +465,10 @@ button {
   .ux hr {
     height: 250px;
   }
+
+  .comment-2 {
+    margin-left: 14%;
+  }
 }
 
 
@@ -471,12 +476,15 @@ button {
   .ux hr {
     height: 278px;
   }
+
+  .comment-2 {
+    margin-left: 16%;
+  }
 }
 
 @media screen and (max-width: 900px) {
   h1 {
     font-size: 42px;
-    margin-right: 11%;
   }
 
   .footer {
@@ -491,11 +499,42 @@ button {
     font-size: 44px;
   }
 
+  .copyright {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 848px) {
+  .ux hr {
+    height: 315px;
+  }
+
+  .comment-2 {
+    margin-left: 18%;
+  }
+}
+
+
+@media screen and (max-width: 832px) {
+  .ux hr {
+    height: 348px;
+  }
+
+  .comment-2 {
+    margin-left: 20%;
+  }
 }
 
 @media screen and (max-width:767px) {
   .nav-menu {
     display: none;
+  }
+
+  .design {
+    margin-top: 116px;
   }
 
   .menu .button {
@@ -542,7 +581,7 @@ button {
   :checked~.burger {
     display: block;
     transform: translateY(0);
-    height: 400px;
+    height: 482px;
   }
 
   :checked~.button::before {
@@ -559,56 +598,131 @@ button {
     transform: scale(0);
   }
 
-  h1 {
-    margin-top: 80px;
+  .name {
+    width: 45%;
+  }
+
+  .email {
+    width: 45%;
+  }
+
+  .website {
+    width: 80%;
+  }
+
+  .comment-2 {
+    margin-left: 22%;
   }
 }
 
-@media screen and (max-width:692px) {
-  :checked~.burger {
-    height: 464px;
+@media screen and (max-width: 729px) {
+  .ux hr {
+    height: 400px;
+  }
+
+  .comment-2 {
+    margin-left: 24%;
   }
 }
+
 
 @media screen and (max-width:660px) {
   :checked~.burger {
-    height: 400px;
-    z-index: 20;
+    height: 466px;
   }
 
   h1 {
     font-size: 38px;
   }
 
-  .photos-2 {
-    display: inline;
-  }
-
-  .photos-2 .photo-2 {
-    width: 100%;
-  }
-
-  .photo-2 p {
-    padding-bottom: 48px;
-  }
-
   .design {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+  }
+
+  .social {
+    display: flex;
     flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
-  .time {
-    width: 100%;
-    margin-bottom: 48px;
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 137px;
+    height: 19px;
+    margin-top: 1.5%;
+    margin-bottom: 29px;
   }
 
-  .time h2 {
-    letter-spacing: 0rem;
-    padding-right: 0px;
-    font-weight: 400;
+  .monica {
+    margin-left: 10%;
+  }
+
+  .transformation {
+    margin: 0;
+  }
+
+  .ux {
+    margin-right: 10%;
+  }
+
+  .ux hr {
+    height: 310px;
+  }
+
+  .content {
+    margin-left: 10%;
   }
 
   .work {
+    margin-right: 10%;
+  }
+
+  .data-form {
+    margin-right: 10%;
+  }
+
+  .list-items {
+    margin-right: 10%;
+  }
+
+  .name {
+    width: 85%;
+  }
+
+  .email {
+    width: 85%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .website {
+    width: 85%;
+  }
+
+  .form-comment {
     width: 100%;
+  }
+
+  .tags::after {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background-color: #7B7B7B;
+    position: absolute;
+    margin-top: 16px;
+  }
+
+  .comments {
+    margin-right: 10%;
+  }
+
+  .comment-2 {
+    margin-left: 18%;
   }
 
   .footer {
@@ -643,54 +757,45 @@ button {
     justify-content: flex-start;
   }
 
-  .photo-half {
-    display: none;
-  }
-
-  .photo-media {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .photo-media-2 {
-    width: 20%;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .photo-media-2 h4 {
-    padding-top: 50%;
-  }
-
-  .photo-media-2 img {
-    position: absolute;
-    object-fit: cover;
-  }
-}
-
-@media screen and (max-width:639px) {
-  :checked~.burger {
-    height: 464px;
-    z-index: 20;
-  }
 }
 
 @media screen and (max-width:560px) {
   :checked~.burger {
-    height: 464px;
+    height: 456px;
     width: 60%;
     text-align: center;
     z-index: 20;
   }
+
+  .design {
+    margin-top: 90px;
+  }
+
+  .comment-2 {
+    margin-left: 20%;
+  }
 }
 
+@media screen and (max-width:514px) {
+  .comment-2 {
+    margin-left: 22%;
+  }
+
+  :checked~.burger {
+    height: 520px;
+  }
+}
 
 @media screen and (max-width:460px) {
   :checked~.burger {
-    height: 464px;
+    height: 508px;
     width: 80%;
     text-align: center;
     z-index: 20;
+  }
+
+  .design {
+    margin-top: 78px;
   }
 
   h1 {
@@ -701,52 +806,38 @@ button {
     font-size: 33px
   }
 
-  .work p {
-    font-size: 16px;
-  }
-
   .time h2 {
     font-size: 19px;
     padding-bottom: 28px;
   }
 
-  .photo-half {
-    display: none;
-  }
-
-  .photo-media {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  .photo-media-2 {
-    width: 20%;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .photo-media-2 img {
-    position: absolute;
-    object-fit: cover;
+  .comment-2 {
+    margin-left: 25%;
   }
 }
 
-@media screen and (max-width:407px) {
+@media screen and (max-width:420px) {
   :checked~.burger {
-    height: 528px;
+    height: 504px;
     width: 100%;
     text-align: center;
     z-index: 20;
   }
+
+  .comment-2 {
+    margin-left: 26%;
+  }
 }
 
-@media screen and (max-width:345px) {
+@media screen and (max-width:409px) {
   :checked~.burger {
-    height: 592px;
+    height: 570px;
+    width: 100%;
+    text-align: center;
     z-index: 20;
   }
 
-  .media {
-    margin-top: 90px;
+  .comment-2 {
+    margin-left: 28%;
   }
 }
